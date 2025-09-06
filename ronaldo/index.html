@@ -1,26 +1,54 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
+    <title>Projeto Invisível Dói</title>
 
+    <!-- CÓDIGO QUE ADICIONAMOS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <script>
+      // Configuração customizada do Tailwind para adicionar a cor e fonte do projeto
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'custom-orange': '#DB4000',
+              'custom-blue': '#86ADD4',
+            },
+            fontFamily: {
+              'montserrat': ['Montserrat', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+      <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+
+  </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
 
-  <div vw class="enabled">
-    <div vw-access-button class="active"></div>
-    <div vw-plugin-wrapper>
-      <div class="vw-plugin-top-wrapper"></div>
+    <!-- SEU CÓDIGO DO VLIBRAS - VAMOS MANTER! -->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
     </div>
-  </div>
-  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-  <script>
-    new window.VLibras.Widget('https://vlibras.gov.br/app');
-  </script>
-
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <!-- FIM DO CÓDIGO VLIBRAS -->
   </body>
 </html>
