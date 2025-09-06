@@ -3,15 +3,13 @@ import React from 'react';
 function HeroSection() {
   return (
     <main className="relative text-white text-center py-20 px-4 flex flex-col items-center justify-center min-h-[calc(100vh-64px)] overflow-hidden">
-      
-      {/* Imagem de Fundo e Overlay */}
+
       <div 
         className="absolute top-0 left-0 w-full h-full bg-cover bg-center z-0"
         style={{ backgroundImage: `url(/imagem-do-fundo.jpg)` }}
       ></div>
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-10"></div>
 
-      {/* Conteúdo da Seção */}
       <div className="relative z-20 flex flex-col items-center gap-8">
         <div className="bg-black bg-opacity-50 p-6 rounded-lg max-w-2xl">
           <h1 className="text-4xl md:text-6xl font-black uppercase tracking-wider">

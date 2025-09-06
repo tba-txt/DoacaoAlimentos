@@ -6,7 +6,7 @@ function Header() {
   return (
     <header className="bg-[#DB4E00] text-white p-4 flex justify-between items-center shadow-md fixed top-0 left-0 w-full z-50">
       <div className="font-black text-lg md:text-xl">
-        PROJETO X
+        Sopa Voluntária
       </div>
       <nav className="hidden md:flex">
         <ul className="flex items-center space-x-6">
@@ -41,7 +41,6 @@ function TornPaper({ position }) {
   return <div className={`absolute left-0 w-full h-20 md:h-32 z-30 ${position === 'top' ? 'top-12' : 'bottom-0'}`} style={style}></div>;
 }
 
-// --- Componente HeroSection ---
 function HeroSection() {
   return (
     <main className="relative text-white text-center flex flex-col items-center justify-center min-h-screen overflow-hidden">
@@ -136,7 +135,7 @@ function AboutSection() {
                 <h2 className="text-3xl md:text-4xl font-black text-gray-800 uppercase">Nossa História</h2>
                 <div className="mt-4 mb-8 w-24 h-1.5 bg-custom-orange mx-auto"></div>
                 <div className="text-left text-lg text-gray-700 space-y-4">
-                    <p>O projeto "<span className="font-bold text-custom-orange">PROJETO X</span>" nasceu da inquietação e do desejo de fazer a diferença de <span className="font-bold">Ronaldo</span>. Atualmente cursando <span className="font-bold">[coloque aqui o nome do curso]</span> na <span className="font-bold">[coloque aqui o nome da faculdade]</span>, Ronaldo sentiu o chamado para olhar além dos muros da universidade e encarar de frente uma realidade dura e muitas vezes ignorada.</p>
+                    <p>O projeto "<span className="font-bold text-custom-orange">Sopa Voluntária</span>" nasceu da inquietação e do desejo de fazer a diferença de <span className="font-bold">Ronaldo</span>. Ronaldo sentiu o chamado para olhar além dos muros da universidade e encarar de frente uma realidade dura e muitas vezes ignorada.</p>
                     <p>Movido pela crença de que a empatia é a mais poderosa ferramenta de transformação social, ele resolveu implementar este projeto. O objetivo é simples, mas audacioso: conectar pessoas que querem ajudar com quem mais precisa, criando uma ponte de solidariedade para combater a fome e a invisibilidade da população em situação de rua.</p>
                 </div>
             </div>
@@ -150,12 +149,12 @@ function Footer() {
     return (
         <footer className="bg-[#DB4E00] text-white py-10 px-6">
             <div className="max-w-4xl mx-auto text-center">
-                <h3 className="text-2xl font-black uppercase">PROJETO X</h3>
+                <h3 className="text-2xl font-black uppercase">Sopa Voluntária</h3>
                 <p className="mt-2 text-gray-200">Transformando empatia em ação.</p>
 
                 <div className="border-t border-gray-700 pt-6 mt-8">
                     <p className="text-gray-300 text-sm">
-                        &copy; {currentYear} PROJETO X. Todos os direitos reservados.
+                        &copy; {currentYear} Sopa Voluntária. Todos os direitos reservados.
                     </p>
                 </div>
             </div>

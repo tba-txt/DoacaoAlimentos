@@ -1,16 +1,10 @@
-/* Apague tudo que estava aqui e cole este código */
-
-/* Importa as diretivas base do Tailwind CSS */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Define o estilo base para o corpo da página */
 body {
-  /* Cor de fundo laranja customizada, que definimos na config do Tailwind */
   @apply bg-custom-orange font-montserrat;
 
-  /* Melhora a renderização da fonte */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
